@@ -13,21 +13,27 @@
     <div class="nav-container">
         <!-- Logo circle that overlaps the line -->
         <div class="logo-circle">
-            <!-- Removed inline style; CSS handles sizing -->
             <img src="images/Group 1028.png" alt="MindMate Logo">
         </div>
-        
+
+        <!-- Hamburger button (visible on mobile only) -->
+        <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation" aria-expanded="false">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+
         <!-- Navigation links -->
-        <nav class="main-nav">
+        <nav class="main-nav" id="mainNav">
             <ul>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#domain">Domain</a></li>
-                <li><a href="#technologies">Technologies</a></li>
-                <li><a href="#milestone">Milestone</a></li>
-                <li><a href="#download">Download</a></li>
-                <li><a href="#achievements">Achievements</a></li>
-                <li><a href="#team">Team</a></li>
-                <li><a href="#contact">Contact us</a></li>
+                <li><a href="#home" class="nav-link">Home</a></li>
+                <li><a href="#domain" class="nav-link">Domain</a></li>
+                <li><a href="#technologies" class="nav-link">Technologies</a></li>
+                <li><a href="#milestone" class="nav-link">Milestone</a></li>
+                <li><a href="#download" class="nav-link">Download</a></li>
+                <li><a href="#achievements" class="nav-link">Achievements</a></li>
+                <li><a href="#team" class="nav-link">Team</a></li>
+                <li><a href="#contact" class="nav-link">Contact us</a></li>
             </ul>
         </nav>
     </div>
@@ -37,6 +43,7 @@
         <h1>AI-Based Early Childhood <br> Emotional Intelligence <br> Monitoring Platform</h1>
     </div>
 </header>
+
     <!-- Literature Survey -->
     <section class="literature-survey container" section id="domain">
         <!-- Domain Header -->
@@ -72,10 +79,10 @@
         <div class="references-box">
             <h3>References</h3>
             <ol>
-                <li>J. Ebert et al., "Teaching Emotion and Creativity Skills to Preschoolers Through a Child Workshop," The International Journal of Creativity & Problem Solving, vol. 25, no. 2, pp. 23–35, 2015.</li>
-                <li>A. Alshahrani, M. M. Almatrafi, and J. I. Mustafa, "A Children's Psychological and Mental Health Detection Model by Drawing Analysis based on Computer Vision and Deep Learning," Engineering, Technology & Applied Science Research, vol. 14, no. 4, pp. 15533–15540, 2024.</li>
+                <li>J. Ebert et al., "Teaching Emotion and Creativity Skills to Preschoolers Through a Child Workshop," The International Journal of Creativity &amp; Problem Solving, vol. 25, no. 2, pp. 23–35, 2015.</li>
+                <li>A. Alshahrani, M. M. Almatrafi, and J. I. Mustafa, "A Children's Psychological and Mental Health Detection Model by Drawing Analysis based on Computer Vision and Deep Learning," Engineering, Technology &amp; Applied Science Research, vol. 14, no. 4, pp. 15533–15540, 2024.</li>
                 <li>R. Ramos et al., "Emotion Analysis in Children's Drawings Using Machine Learning Techniques," Research in Computing Science, 2024.</li>
-                <li>R. Ramírez-Esparza, A. T. García-Sierra, and A. K. Kuhl, "Beyond the 30-Million-Word Gap: Children’s Conversational Exposure Is Associated With Language-Related Brain Function," Psychological Science, vol. 29, no. 4, pp. 700–710, Nov. 2017, doi: 10.1177/0956797617742725.</li>
+                <li>R. Ramírez-Esparza, A. T. García-Sierra, and A. K. Kuhl, "Beyond the 30-Million-Word Gap: Children's Conversational Exposure Is Associated With Language-Related Brain Function," Psychological Science, vol. 29, no. 4, pp. 700–710, Nov. 2017, doi: 10.1177/0956797617742725.</li>
                 <li>J. Johnson, "Effect of emotions on learning, memory, and disorders associated with the changes in expression levels: A narrative review," Brain Circulation, vol. 10, no. 2, pp. 134–144, Jun. 2024, doi: 10.4103/bc.bc_86_23.</li>
             </ol>
         </div>
@@ -85,14 +92,13 @@
         <!-- Research Gap Row -->
         <div class="research-gap-grid container">
             <div class="gap-image">
-                <!-- Replace with your actual image file -->
                 <img src="images/Rectangle 2674.png" alt="Children with teacher">
             </div>
             <div class="gap-content">
                 <h2 class="section-title">Research Gap</h2>
                 <ul class="gap-list">
                     <li>Need for Explainable, Pedagogy-Centric Design</li>
-                    <li>Bias in Modeling & Localization</li>
+                    <li>Bias in Modeling &amp; Localization</li>
                     <li>Lack of Non-Invasive Emotion Recognition</li>
                     <li>Fragmented Developmental Assessments</li>
                 </ul>
@@ -137,7 +143,7 @@
                 <div class="obj-card">
                     <div class="obj-text">
                         <h3>Memory Recall Identification through handwriting</h3>
-                        <p>The second objective of this study is to develop a system to assess preschool children’s memory recall through handwriting tasks while distinguishing recall errors from general writing difficulties. The system will evaluate writing accuracy against given stimuli to identify recall patterns and cognitive gaps, and provide feedback to support early learning and development.</p>
+                        <p>The second objective of this study is to develop a system to assess preschool children's memory recall through handwriting tasks while distinguishing recall errors from general writing difficulties. The system will evaluate writing accuracy against given stimuli to identify recall patterns and cognitive gaps, and provide feedback to support early learning and development.</p>
                     </div>
                 </div>
             </div>
@@ -158,7 +164,7 @@
                 <div class="obj-icon">★</div>
                 <div class="obj-card">
                     <div class="obj-text">
-                        <h3>Focus Level Identification through coloring & tracing tasks</h3>
+                        <h3>Focus Level Identification through coloring &amp; tracing tasks</h3>
                         <p>The fourth objective is to measure the focus level of children aged 4 to 6 using coloring and tracing activity images through computer vision techniques. It evaluates task completeness, boundary adherence, coloring outside lines, and completion time, enabling accurate assessment of attention, concentration, and overall engagement in fine motor skill activities.</p>
                     </div>
                 </div>
@@ -172,11 +178,7 @@
 
         <!-- Diagram Container -->
         <div class="diagram-container">
-            <!-- Main Flowcharts Placeholder -->
-          
             <img src="images/Group 1029.png" alt="Methodology Flowcharts" class="responsive-img">
-            
-
         </div>
 
         <!-- Methodology Description -->
@@ -372,6 +374,7 @@
     </div>
   </div>
 </section>
+
     <!-- Downloads section -->
     <section class="docs-section" section id="download">
         <div class="container">
@@ -572,7 +575,7 @@
             </div>
 
         </div>
-        </section>
+    </section>
 
     <!-- achievements -->
     <section class="achievements-section" section id="achievements">
@@ -733,6 +736,27 @@
     <footer class="final-footer">
         <p>© 2026 <b>MindMate</b> Project - Sri Lanka Institute of Information Technology. All rights reserved.</p>
     </footer>
+
+    <!-- Mobile nav toggle script -->
+    <script>
+        const toggle = document.getElementById('navToggle');
+        const nav    = document.getElementById('mainNav');
+
+        toggle.addEventListener('click', () => {
+            const isOpen = nav.classList.toggle('open');
+            toggle.classList.toggle('open', isOpen);
+            toggle.setAttribute('aria-expanded', isOpen);
+        });
+
+        // Close menu when a nav link is clicked
+        document.querySelectorAll('.nav-link').forEach(link => {
+            link.addEventListener('click', () => {
+                nav.classList.remove('open');
+                toggle.classList.remove('open');
+                toggle.setAttribute('aria-expanded', 'false');
+            });
+        });
+    </script>
 
 </body>
 </html>
