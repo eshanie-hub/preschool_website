@@ -38,7 +38,7 @@ body {
 .logo-circle {
     position: absolute;
     left: 20px;
-    top: 50%;
+    top: 80%;
     transform: translateY(-50%);
     width: 100px;
     height: 100px;
@@ -785,30 +785,42 @@ body {
     background-color: #3b4d9b;
     color: white;
     padding: 80px 0;
+    /* Ensure text within the section defaults to center if needed */
+    text-align: center; 
 }
 
-.team-layout {
-    display: flex;
-    gap: 40px;
-    align-items: flex-start;
+/* Center the container content */
+.team-section .container {
+    max-width: 1200px; /* Optional: standard container width */
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* NEW: Style the header to be full width and centered */
+.team-header {
+    width: 100%;
+    margin-bottom: 60px; /* Space between header and grid */
+    text-align: center;
 }
 
 .team-header h2 {
     font-size: 4rem;
     font-weight: 800;
-    line-height: 1;
+    line-height: 1.1; /* Adjusted slightly for better wrapping */
     margin: 0;
-    min-width: 300px;
+    /* Removed min-width, as it's now centered */
 }
 
+/* Updated Grid Container: Remove flex-grow, ensure full width */
 .team-grid-container {
-    flex-grow: 1;
+    width: 100%;
 }
 
 .team-row {
     display: flex;
-    justify-content: space-around;
-    gap: 20px;
+    /* Use center to ensure rows are centered if they don't fill width */
+    justify-content: center; 
+    gap: 30px; /* Slightly increased gap for better spacing */
     margin-bottom: 50px;
     flex-wrap: wrap;
 }
@@ -817,7 +829,9 @@ body {
 
 .member-card {
     text-align: center;
-    max-width: 180px;
+    /* Slightly increased max-width to allow more space for names */
+    flex: 0 1 200px; 
+    max-width: 200px;
 }
 
 .member-card img {
@@ -826,15 +840,15 @@ body {
     object-fit: cover;
     border: 2px solid transparent;
     margin-bottom: 15px;
+    border-radius: 8px; /* Optional: adds subtle rounded corners */
 }
 
 .member-card p {
-    font-size: 1rem;
+    font-size: 1.1rem; /* Slightly larger for readability */
     font-weight: 500;
     line-height: 1.3;
     margin: 0;
 }
-
 /* ═══════════════════════════════════════════════════
    CONTACT
 ═══════════════════════════════════════════════════ */
@@ -1204,7 +1218,12 @@ body {
 
     .tech-card p { font-size: 0.8rem; }
 
-    .team-header h2 { font-size: 2rem; }
+    .team-header h2 {
+        font-size: 2.5rem;
+    }
+    .team-row {
+        gap: 20px;
+    }
 
     .member-card {
         flex: 0 0 calc(50% - 12px);
