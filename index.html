@@ -452,15 +452,31 @@
             <!-- Status Documents II -->
             <div class="doc-card">
                 <div class="card-body">
-                <div class="card-header">
-                    <i class="file-icon">📄</i>
-                    <h3>Status Documents II</h3>
+                    <div class="card-header">
+                        <i class="file-icon">📄</i>
+                        <h3>Status Document 2</h3>
+                    </div>
+
+                    <p class="submission-date">Submitted on 2026/04/30</p>
+
+                    <select class="doc-select" id="status2-select">
+                        <option value="" disabled selected>Select a document</option>
+                        <option value="download/document/status2/MLOpsReport-25-26J-088.pdf">
+                            MLOps Report
+                        </option>
+                        <option value="download/document/status2/EthicalAnalysisReport-25-26J-088.pdf">
+                            Ethical Analysis Report
+                        </option>
+                    </select>
                 </div>
-                <p class="submission-date">Yet to be submitted</p>
-                </div>
+
                 <div class="card-footer">
-                <span class="type-label">Group</span>
-                <a href="#" class="download-link">Download</a>
+                    <span class="type-label">Group</span>
+
+                    <a href="#" class="download-link" id="status2-download"
+                    onclick="handleDownload(event, 'status2-select')">
+                    Download
+                    </a>
                 </div>
             </div>
 
